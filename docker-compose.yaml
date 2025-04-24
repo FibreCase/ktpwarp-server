@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  ktpwarp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ktpwarp-server
+    volumes:
+      - ./config.ts:/app/config.ts
+    ports:
+      - "{your_port}:3000"  # 根据需求修改端口
+    restart: unless-stopped

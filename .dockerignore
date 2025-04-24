@@ -1,0 +1,30 @@
+# 忽略 Git 仓库相关文件
+.git
+.gitignore
+
+# 忽略构建输出
+node_modules
+dist
+build
+__pycache__/
+*.pyc
+*.pyo
+
+# 忽略日志文件
+*.log
+
+# 忽略临时文件
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# 忽略操作系统生成的文件
+.DS_Store
+
+# 忽略 IDE 配置文件
+.vscode
+.idea
+
+# 忽略环境配置文件
+config.ts

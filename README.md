@@ -47,6 +47,7 @@ ktpWarp 仍处于 Beta 阶段，这代表 ktpWarp 尚未在生产环境中得到
 Android app 的扫码速度最快，而 iOS MITM 模块可以让您自行选择任何一种扫码工具，您可以使用您手上最快的扫码器，因此首先推荐使用这两种方式。
 
 ## 部署
+### 直接安装
 
 1. 将本仓库 clone 到您的服务器或本地电脑
 
@@ -63,6 +64,21 @@ Android app 的扫码速度最快，而 iOS MITM 模块可以让您自行选择�
 7. 运行 `pnpm start` 启动服务，ktpwarp-server 会在后台运行
 
 8. 运行 `pnpm stop` 停止服务
+
+### Docker Compose部署
+
+1. 将本仓库 clone 到您的服务器或本地电脑
+
+2. 按照官方教程安装 Docker
+
+3. 将 `config.example.ts` 重命名为 `config.ts` 并修改其中的配置
+
+4. 修改 `docker-compose.yaml` 以适配您的服务器
+
+5. 运行 `docker compose up -d` 启动服务
+
+6. 运行 `docker compose down` 停止服务并删除相关容器
+
 
 ## 安全提醒
 
