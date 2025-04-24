@@ -9,5 +9,5 @@ services:
     volumes:
       - ./config.ts:/app/config.ts
     ports:
-      - "{your_port}:3000"  # 根据需求修改端口
+      - "{your_port}:11451"  # 根据需求修改端口
     restart: unless-stopped

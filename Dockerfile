@@ -11,7 +11,7 @@ COPY . /app
 RUN corepack enable && pnpm config set registry https://registry.npmmirror.com && pnpm install
 
 # 暴露端口
-EXPOSE 3000
+EXPOSE 11451
 
 # 启动项目
 CMD ["sh", "-c", "pnpm start && tail -f /dev/null"]
