@@ -1,5 +1,5 @@
 #
-name: Build anaconda-pytorch-cu128
+name: Build and Push Docker Image
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
